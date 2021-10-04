@@ -1,4 +1,3 @@
-
 <?php
 include("header.php");
 ?>
@@ -16,55 +15,7 @@ include("config.php");
 <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">Student Registration</h2>
 
-    <br>    <br>
-    <div class="row">
- <div class="col-md-3" style="text-align:right">
-        <label>COURSE:</label>
-      </div>
-     <div class="col-md-6">
-     <?php
-     $sql=mysqli_query($con,"select * from tblcourse");?>
-     <select name="drpcoursename" class="form-control" style="width:500px;">
-     <option value="0">--Select--</option>
-     
-	<?php
-	while($row=mysqli_fetch_array($sql))
-	{
-	?>
-          
-	<option value="<?php echo $row['courseid'] ?>"> <?php echo $row['coursename'];?> </option>
-        <?php
-}
-?>
-        </select>
-      </div>
-    </div>
-     <br>
-     <div class="row">
-      <div class="col-md-3" style="text-align:right">
-        <label>BATCH:</label>
-      </div>
-     
-     <div class="col-md-6">
-     <?php
-     $sql=mysqli_query($con,"select * from tblbatch");?>
-     <select name="drpbatchname" class="form-control" style="width:500px;">
-     <option value="0">----Select---</option>
-     
-	<?php
-	while($row=mysqli_fetch_array($sql))
-	{
-	?>
-          
-	<option value="<?php echo $row['batchid'] ?>"> <?php echo $row['batchname'];?> </option>
-        <?php
-}
-?>
-        </select>
-      </div>
-    </div>
-   
-<br>
+    
    
 
     <div class="row">
