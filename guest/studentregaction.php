@@ -13,7 +13,7 @@ $courseid=2323;
 
 $save=mysqli_query($con,"insert into tbl_candidatebasicdetails(first_name,last_name,dob,email,contact_number,username,password,application_number,admission_status,courseid)values('$Enterstudentfirstname','$Enterstudentlastname','$Enterdob','$Enteremail','$Entercontact','$Enterusername','$Enterpassword','$applicationnumber','$admissionstatus','$courseid')");
 //
-echo "<script>alert('Course Registration Successfull!!!'); window.location='viewcourse.php'</script>";
+echo "<script>alert('Course Registration Successfull!!!'); window.location='../Candidate/studentPersonal.php'</script>";
 
 //echo "insert into tbl_candidatebasicdetails(first_name,last_name,dob,email,contact_number,username,password,application_number,admission_status,courseid)values('$Enterstudentfirstname','$Enterstudentlastname','$Enterdob','$Enteremail','$Entercontact','$Enterusername','$Enterpassword','$applicationnumber','$admissionstatus','$courseid')";
 
