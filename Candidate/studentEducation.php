@@ -11,7 +11,7 @@ include("header.php");
 <?php
 include("config.php");
 ?>
-	<form action="action.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
+	<form action="studentEducationaction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
 <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">Student Registration</h2>
         <h2 style="margin-top: 6%;font-family: fantasy; margin-left: 15%;">10th </h2>
@@ -24,7 +24,7 @@ include("config.php");
         <label>INSTITUTION NAME:</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="txt_institutionname" style="width:500px;" placeholder="Enter institution name">
+        <input type="text" class="form-control" name="txt_institutiontenname" style="width:500px;" placeholder="Enter institution name">
       </div>
     </div>
     <br>
@@ -33,7 +33,7 @@ include("config.php");
      <label>PLACE OF INSTITUTION:</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="txt_institutionPlace" style="width:500px;" placeholder="Enter place of institution">
+        <input type="text" class="form-control" name="txt_place" style="width:500px;" placeholder="Enter place of institution">
       </div>
     </div>
     <br>
@@ -42,7 +42,7 @@ include("config.php");
         <label>STATE OF INSTITUTION</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="txt_institutionState" style="width:500px;" placeholder="Enter state of institution" required>
+        <input type="text" class="form-control" name="txt_state" style="width:500px;" placeholder="Enter state of institution" required>
       </div>
     </div>
     <br>
@@ -51,7 +51,7 @@ include("config.php");
             <label>YEAR OF PASSOUT</label>
       </div>
       <div class="col-md-6">
-        <input type="DATE" name="passout" title="ten digit cods" class="form-control" required ">
+        <input type="DATE" name="txt_year" title="ten digit cods" class="form-control" required ">
       </div>
     </div>
     <br>
@@ -60,7 +60,7 @@ include("config.php");
         <label>MARK IN PERCENTAGE</label>
       </div>
       <div class="col-md-6">
-       <input type="number" class="form-control" name="markInPercentage" style="width:500px;" placeholder="enter mark in percentage" required>
+       <input type="number" class="form-control" name="txt_mark" style="width:500px;" placeholder="enter mark in percentage" required>
       </div>
     </div>
     <br>
@@ -70,7 +70,7 @@ include("config.php");
         <label>NO. OF ATTEMPTS</label>
       </div>
       <div class="col-md-6">
-       <input type="number" class="form-control" name="no.OfAttempts" style="width:500px;" placeholder=" number no. of attempts" required>
+       <input type="number" class="form-control" name="txt_attempt" style="width:500px;" placeholder=" number no. of attempts" required>
       </div>
     </div>
     <br>
@@ -81,7 +81,7 @@ include("config.php");
         <label>INSTITUTION NAME:</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="InstitutionName" style="width:500px;" placeholder="Enter institution name">
+        <input type="text" class="form-control" name="txt_institutionplustwoname" style="width:500px;" placeholder="Enter institution name">
       </div>
     </div>
     <br>
@@ -90,7 +90,7 @@ include("config.php");
      <label>PLACE OF INSTITUTION:</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="PlaceInstitution" style="width:500px;" placeholder="Enter place of institution">
+        <input type="text" class="form-control" name="txt_institutionplace" style="width:500px;" placeholder="Enter place of institution">
       </div>
     </div>
     <br>
@@ -99,7 +99,7 @@ include("config.php");
         <label>STATE OF INSTITUTION</label>
       </div>
       <div class="col-md-6">
-        <input type="text" class="form-control" name="InstitutionState" style="width:500px;" placeholder="Enter state of institution" required>
+        <input type="text" class="form-control" name="txt_institutionstate" style="width:500px;" placeholder="Enter state of institution" required>
       </div>
     </div>
     <br>
@@ -108,7 +108,7 @@ include("config.php");
             <label>YEAR OF PASSOUT</label>
       </div>
       <div class="col-md-6">
-        <input type="DATE" name="YrPassout" title="ten digit cods" class="form-control" required ">
+        <input type="DATE" name="txt_plustwoyear" title="ten digit cods" class="form-control" required ">
       </div>
     </div>
     <br>
@@ -117,7 +117,7 @@ include("config.php");
         <label>MARK OF 11 IN PERCENTAGE</label>
       </div>
       <div class="col-md-6">
-       <input type="number" class="form-control" name="11Percentage" style="width:500px;" placeholder="enter mark in percentage" required>
+       <input type="text" class="form-control" name="txt_11mark" style="width:500px;" placeholder="enter mark in percentage" required>
       </div>
     </div>
     <br>
@@ -127,12 +127,12 @@ include("config.php");
         <label>MARK OF 12 IN PERCENTAGE</label>
       </div>
       <div class="col-md-6">
-       <input type="number" class="form-control" name="12percentage" style="width:500px;" placeholder="enter mark in percentage" required>
+       <input type="text" class="form-control" name="txt_12mark" style="width:500px;" placeholder="enter mark in percentage" required>
       </div>
     </div>
     
     <div class="row">
-      <input type="submit" name="submit" value="Next" class="btn btn-primary" style="margin-left:63%;margin-top: 5%;" onclick="studentPersonal.php"/>
+      <input type="submit" name="submit" value="Next" class="btn btn-primary" style="margin-left:63%;margin-top: 5%;" />
     </div>
      </div>
 </form>

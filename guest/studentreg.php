@@ -11,14 +11,17 @@ include("header.php");
 <body>
 <?php
 include("config.php");
+
+
+
+
+//
+
+
 ?>
 	<form action="studentregaction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
 <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">Student Registration</h2>
-
-    
-   
-
     <div class="row">
      <div class="col-md-3" style="text-align:right">
         <label>STUDENT FIRST NAME:</label>

@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include ("config.php"); 
 if (isset($_POST["submit"]))
 {
@@ -8,7 +9,9 @@ $result=mysqli_query($con, "SELECT * from tbl_candidatebasicdetails WHERE userna
 $row=mysqli_fetch_array($result);
 if($row>0) 
 { 
-    header("location:../Candidate/index.php");
+    $_SESSION["appno"]=$row["applicationnumber"];
+    //echo $_SESSION["appno"];
+   header("location:../Candidate/index.php");
 }
 else
 {

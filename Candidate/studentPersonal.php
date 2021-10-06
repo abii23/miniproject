@@ -51,7 +51,7 @@ include("config.php");
         <label>Caste</label>
       </div>
       <div class="col-md-6">
-        <input type="text"  class="form-control" required ">
+        <input type="text" name="txt_caste" class="form-control" required ">
       </div>
     </div>
     <br>
