@@ -11,7 +11,7 @@ include("header.php");
 <?php
 include("config.php");
 ?>
-	<form action="studentEducationaction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
+	<form action="studentEducationAction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;">
 <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #1b93e1; border-radius: 4px; top: 14px; padding-top: 3%;">
         <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">Student Registration</h2>
         <h2 style="margin-top: 6%;font-family: fantasy; margin-left: 15%;">10th </h2>
@@ -51,7 +51,7 @@ include("config.php");
             <label>YEAR OF PASSOUT</label>
       </div>
       <div class="col-md-6">
-        <input type="DATE" name="txt_year" title="ten digit cods" class="form-control" required ">
+        <input type="number" name="txt_year" class="form-control" required ">
       </div>
     </div>
     <br>
@@ -108,7 +108,7 @@ include("config.php");
             <label>YEAR OF PASSOUT</label>
       </div>
       <div class="col-md-6">
-        <input type="DATE" name="txt_plustwoyear" title="ten digit cods" class="form-control" required ">
+        <input type="number" name="txt_plustwoyear" class="form-control" required ">
       </div>
     </div>
     <br>
